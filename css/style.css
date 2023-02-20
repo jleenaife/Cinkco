@@ -300,7 +300,7 @@ h1, h2, h3{
         font-size: 4rem;
     }
     .work-bottom{
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     .portfolio-grid{
         grid-template-columns: repeat(2, 1fr);
