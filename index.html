@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- nav bar -->
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(window).on('scroll',function(){
+            if($(window).scrollTop()){
+                $('nav').addClass('black');
+            }
+            else{
+                $('nav').removeClass('black');
+            }
+        })
+        /*menu button onclick function*/         $(document).ready(function(){
+            $('.menu h4').click(function(){
+                $("nav ul").toggleClass("active")
+            })
+        })
+    </script>
     <!-- hamburger -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -15,6 +34,19 @@
     <link rel = "stylesheet" href = "css/style.css">
 </head>
 <body>
+<!--nav bar-->
+<div class="responsive-bar">
+    <div class="logo">
+        <img src= "images/CINKCO_LOGO.png" alt="logo"/>
+    </div>
+    <div class="menu">
+        <h4>Menu</h4>
+    </div>
+</div>
+<nav>
+    <div class="logo">
+        <img src="images/CINKCO_LOGO.png" alt="logo"/>
+    </div>
     <!--hamburger -->
     <input type="checkbox" id="active">
     <label for="active" class="menu-btn"><span></span></label>
@@ -28,12 +60,8 @@
             <li><a href="#">Feedback</a></li>
         </ul>
     </div>
-    <div class="content">
-        <div class="title">
-            Fullscreen Overlay Navigation Bar</div>
-        <p>
-            (Hamburger Menu-2)</p>
-    </div>
+</nav>
+
 
     <!-- header -->
     <header id = "header" class = "vh-100 flex">
