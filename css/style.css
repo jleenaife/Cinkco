@@ -84,12 +84,17 @@ h1, h2, h3{
 }
 .header-content{
     padding-bottom: 4rem;
+    letter-spacing: 15px;
+    flex-direction: row;
+    white-space: nowrap;
+    flex-wrap: nowrap;
 }
 .header-content h1{
     font-size: 4.5rem;
     margin-bottom: 0;
     text-transform: uppercase;
     color: var(--light-color);
+    flex-direction: row;
 }
 .header-content h3{
     color: var(--light-color);
@@ -97,6 +102,7 @@ h1, h2, h3{
     letter-spacing: 4px;
     text-transform: uppercase;
     margin-top: 1.5rem;
+    flex-direction: row;
 }
 .social-links{
     display: flex;
@@ -254,6 +260,7 @@ h1, h2, h3{
 }
 .footer-content{
     text-align: center;
+    margin-bottom: 2px;
 }
 .footer-content h3{
     color: var(--light-color);
@@ -283,6 +290,10 @@ h1, h2, h3{
     overflow: hidden;
     margin: 5rem auto;
     border-radius: 50%;
+}
+.footer-container {
+    max-width: 1200px;
+    height: -500px;
 }
 
 
@@ -339,7 +350,7 @@ h1, h2, h3{
     }
     .contact-right{
         padding-left: 3rem;
-        width: 50%;
+        width: 33%;
     }
     .contact-left{
         width: 50%;
@@ -375,8 +386,8 @@ h1, h2, h3{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif;  
+    
 }
 .wrapper{
     position: fixed;
@@ -402,7 +413,7 @@ h1, h2, h3{
     right: 20px;
     /*left: 20px; */
     top: 0px;
-    height: 100px;
+    height: 75px;
     width: 100px;
     text-align: center;
     line-height: 50px;
@@ -605,6 +616,7 @@ nav.black{
 }
 nav .logo{
     float: left;
+    color: #fff;
 }
 nav .logo img{
     height: 80px;
@@ -612,6 +624,7 @@ nav .logo img{
 }
 nav.black .logo img{
     height: 60px;
+    color: #fff;
 }
 nav > ul{
     width: 80%;
@@ -733,3 +746,11 @@ section.sec2{
     }
 }
    
+
+/* arrow button */
+.arrow-dropdown{
+    width: 50px;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: var(--transition);
+}
