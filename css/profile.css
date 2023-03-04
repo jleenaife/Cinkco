@@ -36,8 +36,8 @@ html, body {
 .content{
     position: fixed;
     margin:10px;
-    width:500px;
-    height:650px;
+    width:35%;
+    height:95%;
     background: rgba(257, 257, 257, 0.4);
     backdrop-filter: blur( 1.9px );
     border-radius: 10px;
@@ -507,14 +507,14 @@ xbody {
 .wrapper .github:hover,
 .wrapper .github:hover .tooltip,
 .wrapper .github:hover .tooltip::before {
-    background: #333333;
+    background: #663399;
     color: #ffffff;
 }
 
 .wrapper .youtube:hover,
 .wrapper .youtube:hover .tooltip,
 .wrapper .youtube:hover .tooltip::before {
-    background: #CD201F;
+    background: #0E76A8;
     color: #ffffff;
 }
 
